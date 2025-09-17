@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleek Auto Repairs</title>
+    <style>
+        :root {
+            --primary-color: #1e1e1e;
+            --secondary-color: #2a2a2a;
+            --accent-color: #ffcc00;
+            --background-color: #121212;
+            --text-color: #ffffff;
+            --heading-font: 'Arial', sans-serif;
+            --body-font: 'Verdana', sans-serif;
+        }
+        body {
+            margin: 0;
+            font-family: var(--body-font);
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        header {
+            padding: 20px;
+            text-align: center;
+        }
+        .hero {
+            background: rgba(255, 204, 0, 0.1);
+            border-radius: 15px;
+            padding: 50px;
+            backdrop-filter: blur(10px);
+            margin: 20px;
+        }
+        h1 {
+            font-family: var(--heading-font);
+            font-size: 2.5em;
+        }
+        h2 {
+            font-family: var(--heading-font);
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .feature {
+            background: rgba(255, 204, 0, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 10px;
+            flex: 1;
+            max-width: 30%;
+            backdrop-filter: blur(10px);
+            text-align: center;
+        }
+        .contact {
+            text-align: center;
+            margin: 20px;
+        }
+        .cta-button {
+            background-color: var(--accent-color);
+            color: var(--text-color);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: var(--secondary-color);
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+            .feature {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sleek Auto Repairs</h1>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Your Trusted Car Mechanic</h2>
+            <p>Providing top-notch repair services with a modern touch.</p>
+        </section>
+        <section class="features">
+            <div class="feature">
+                <h3>Engine Diagnostics</h3>
+                <p>Advanced diagnostics to keep your engine running smoothly.</p>
+            </div>
+            <div class="feature">
+                <h3>Brake Services</h3>
+                <p>Expert brake repairs and replacements for your safety.</p>
+            </div>
+            <div class="feature">
+                <h3>Oil Changes</h3>
+                <p>Quick and efficient oil change services for all vehicles.</p>
+            </div>
+        </section>
+        <section class="about">
+            <h2>About Us</h2>
+            <p>At Sleek Auto Repairs, we pride ourselves on our commitment to quality and customer satisfaction. Our team of experienced mechanics is here to provide reliable and affordable car repair services.</p>
+        </section>
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <p>Ready to get your car serviced? <a href="#" class="cta-button">Contact Us</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Sleek Auto Repairs. All rights reserved.</p>
+    </footer>
+</body>
+</html>
